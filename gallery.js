@@ -132,13 +132,14 @@ const paintings = [
         title: "Grapes",
         year: "2025",
         medium: "Gauche on Paper",
-
+        caption: "Metal plate"
     },
     {
         image: "paintings/p2025_4.jpg",
         title: "Trees",
         year: "2025",
         medium: "Gauche on Paper",
+        caption: "From floor to ceiling."
 
     }
 
