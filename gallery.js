@@ -126,7 +126,22 @@ const paintings = [
         year: "2025",
         medium: "Gauche on Paper",
         caption: "Every evening the birds come to the conference at Shah Ali (R) darbar. They socialize, they gossip, they fight, they make love, and they sleep." 
-    }
+    },
+    {
+        image: "paintings/p2025_3.jpg",
+        title: "Grapes",
+        year: "2025",
+        medium: "Gauche on Paper",
+
+    },
+    {
+        image: "paintings/p2025_3.jpg",
+        title: "Trees",
+        year: "2025",
+        medium: "Gauche on Paper",
+
+    },
+
 ];
 
 
