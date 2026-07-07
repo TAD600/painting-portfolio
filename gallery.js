@@ -140,7 +140,7 @@ const paintings = [
         year: "2025",
         medium: "Gauche on Paper",
 
-    },
+    }
 
 ];
 
