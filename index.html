@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tahia Anan Dhira</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         TOP BAR
+    ====================================================== -->
+
+    <header class="topbar">
+
+        <div class="name">
+
+            <a href="index.html">
+                Tahia Anan Dhira
+            </a>
+
+        </div>
+
+        <div class="links">
+
+            <!-- Email -->
+            <a href="mailto:dhiraanan3@gmail.com"
+               title="Email">
+
+                <i class="bi bi-envelope-fill"></i>
+
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/dhiraanan/"
+               target="_blank"
+               title="LinkedIn">
+
+                <i class="bi bi-linkedin"></i>
+
+            </a>
+
+            <!-- Academic Website -->
+            <a href="https://tad600.github.io/"
+               target="_blank"
+               title="Academic Website">
+
+                <i class="bi bi-mortarboard-fill"></i>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         GALLERY
+    ====================================================== -->
+
+    <main id="gallery">
+
+        <!-- Paintings will be inserted here automatically -->
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FULLSCREEN VIEWER
+    ====================================================== -->
+
+    <div id="viewer" class="viewer hidden">
+
+        <span id="close" class="close">
+
+            &times;
+
+        </span>
+
+        <div class="viewer-content">
+
+            <div class="viewer-image-container">
+
+                <img
+                    id="viewer-image"
+                    src=""
+                    alt="Painting">
+
+            </div>
+
+            <div class="viewer-text">
+
+                <h1 id="viewer-title"></h1>
+
+                <p class="meta">
+
+                    <span id="viewer-year"></span>
+
+                    •
+
+                    <span id="viewer-medium"></span>
+
+                </p>
+
+                <p id="viewer-caption"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="gallery.js"></script>
+
+</body>
+
+</html>
