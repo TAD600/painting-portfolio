@@ -135,7 +135,7 @@ const paintings = [
 
     },
     {
-        image: "paintings/p2025_3.jpg",
+        image: "paintings/p2025_4.jpg",
         title: "Trees",
         year: "2025",
         medium: "Gauche on Paper",
