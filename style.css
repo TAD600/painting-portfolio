@@ -2,7 +2,7 @@
    GOOGLE FONTS
 ========================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Source+Sans+3:wght@300;400;500;600&display=swap");
 
 
 /* ==========================================================
@@ -22,11 +22,11 @@
 
 body{
 
-    background:#485941;
+    background:#291b4c;
 
     color:#f7f3ef;
 
-    font-family: 'Source Sans 3', sans-serif;
+    font-family:'Source Sans 3', sans-serif;
 
 }
 
@@ -51,11 +51,9 @@ body{
 
     padding:24px 40px;
 
-    background:rgba(93,109,86,.92);
+    background:#291b4c;
 
-    backdrop-filter:blur(10px);
-
-    border-bottom:1px solid rgba(255,255,255,.12);
+    border-bottom:1px solid rgba(255,255,255,.08);
 
 }
 
@@ -68,9 +66,9 @@ body{
 
     color:#ebcf77;
 
-    font-family:'Shadows Into Light',cursive;
+    font-family:'Caveat', cursive;
 
-    font-size:2.8rem;
+    font-size:3rem;
 
     font-weight:400;
 
@@ -197,7 +195,6 @@ body{
 
 }
 
-
 .painting:hover{
 
     transform:scale(1.02);
@@ -233,7 +230,6 @@ body{
 
 }
 
-
 .hidden{
 
     display:none;
@@ -259,13 +255,11 @@ body{
 
 }
 
-
 .viewer-image-container{
 
     flex:2;
 
 }
-
 
 #viewer-image{
 
@@ -277,13 +271,11 @@ body{
 
 }
 
-
 .viewer-text{
 
     flex:1;
 
 }
-
 
 .viewer-text h1{
 
@@ -295,17 +287,15 @@ body{
 
 }
 
-
 .meta{
 
-    color:#d89292;
+    color:#c9c9c9;
 
     margin-bottom:25px;
 
     letter-spacing:.05em;
 
 }
-
 
 #viewer-caption{
 
@@ -337,7 +327,6 @@ body{
     transition:.3s;
 
 }
-
 
 .close:hover{
 
