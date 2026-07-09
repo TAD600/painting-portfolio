@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tad600.github.io/painting-portfolio/sitemap.xml
+Sitemap: https://art.tahiaanandhira.com/sitemap.xml
