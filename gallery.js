@@ -95,7 +95,7 @@ const paintings = [
     {
         image: "paintings/p2014_2.jpg",
         title: "Durga",
-        year: "2014",
+        year: "2016",
         medium: "Acrylic on Canvas",
         caption: "It was in the Durga Puja break and there were Kashful all around our temporary suburb home. The image quality is poor. But I want to keep the memory of it."
     },  
