@@ -2,7 +2,7 @@
    GOOGLE FONTS
 ========================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Source+Sans+3:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
 
 
 /* ==========================================================
@@ -22,11 +22,22 @@
 
 body{
 
-    background:#291b4c;
+    background:#382f41;
+    color:#f5f2ed;
+    font-family:'Source Sans 3',sans-serif;
+    min-height:100vh;
 
-    color:#f7f3ef;
+}
 
-    font-family:'Source Sans 3', sans-serif;
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    color:inherit;
+    text-decoration:none;
 
 }
 
@@ -37,81 +48,166 @@ body{
 
 .topbar{
 
-    position:sticky;
-
-    top:0;
-
-    z-index:1000;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    padding:24px 40px;
-
-    background:#291b4c;
+    padding:30px 60px;
 
     border-bottom:1px solid rgba(255,255,255,.08);
 
 }
 
 
-/* ---------- Name ---------- */
+/* ==========================================================
+   SITE TITLE
+========================================================== */
 
-.name a{
+.site-title a{
 
-    text-decoration:none;
+    font-family:'EB Garamond',serif;
 
-    color:#ebcf77;
+    font-size:3.4rem;
 
-    font-family:'Caveat', cursive;
+    font-weight:600;
 
-    font-size:3rem;
+    color:#e4dac6;
 
-    font-weight:400;
+    letter-spacing:.02em;
 
     transition:.3s;
 
 }
 
-.name a:hover{
-
-    opacity:.85;
-
-}
-
-
-/* ---------- Icons ---------- */
-
-.links{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:24px;
-
-}
-
-.links a{
+.site-title a:hover{
 
     color:white;
 
-    font-size:1.35rem;
+}
 
-    text-decoration:none;
 
-    transition:.3s;
+/* ==========================================================
+   SOCIAL ICONS
+========================================================== */
+
+.social-icons{
+
+    display:flex;
+
+    gap:22px;
 
 }
 
-.links a:hover{
+.social-icons a{
 
-    color:#f1c27d;
+    color:#f5f2ed;
+
+    font-size:1.35rem;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+
+}
+
+.social-icons a:hover{
+
+    color:#d8c7a0;
 
     transform:translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   PAGE LAYOUT
+========================================================== */
+
+.layout{
+
+    display:grid;
+
+    grid-template-columns:220px 1fr;
+
+    min-height:calc(100vh - 110px);
+
+}
+
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.sidebar{
+
+    padding:50px 40px;
+
+    border-right:1px solid rgba(255,255,255,.06);
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    margin-bottom:28px;
+
+}
+
+.sidebar a{
+
+    color:#f5f2ed;
+
+    font-size:1.1rem;
+
+    transition:.25s;
+
+}
+
+.sidebar a:hover{
+
+    color:#d8c7a0;
+
+}
+
+.sidebar a.active{
+
+    color:#d8c7a0;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   HOME PAGE
+========================================================== */
+
+.content{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding:35px;
+
+}
+
+.featured-image{
+
+    width:100%;
+
+    max-width:1400px;
+
+    height:auto;
+
+    display:block;
 
 }
 
@@ -124,16 +220,16 @@ body{
 
     column-count:4;
 
-    column-gap:14px;
+    column-gap:16px;
 
-    padding:14px;
+    padding:20px;
+
+    width:100%;
 
 }
 
 
-/* Tablet */
-
-@media(max-width:1200px){
+@media(max-width:1400px){
 
     #gallery{
 
@@ -144,9 +240,7 @@ body{
 }
 
 
-/* Small tablet */
-
-@media(max-width:850px){
+@media(max-width:900px){
 
     #gallery{
 
@@ -156,8 +250,6 @@ body{
 
 }
 
-
-/* Phone */
 
 @media(max-width:600px){
 
@@ -171,7 +263,7 @@ body{
 
 
 /* ==========================================================
-   PAINTINGS
+   ARTWORK THUMBNAILS
 ========================================================== */
 
 .painting{
@@ -180,7 +272,7 @@ body{
 
     display:block;
 
-    margin-bottom:14px;
+    margin-bottom:16px;
 
     border-radius:3px;
 
@@ -190,8 +282,7 @@ body{
 
     transition:
         transform .35s ease,
-        box-shadow .35s ease,
-        filter .35s ease;
+        box-shadow .35s ease;
 
 }
 
@@ -199,15 +290,13 @@ body{
 
     transform:scale(1.02);
 
-    filter:brightness(1.05);
-
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    box-shadow:0 12px 28px rgba(0,0,0,.35);
 
 }
 
 
 /* ==========================================================
-   VIEWER
+   FULLSCREEN VIEWER
 ========================================================== */
 
 .viewer{
@@ -216,7 +305,7 @@ body{
 
     inset:0;
 
-    background:rgba(0,0,0,.93);
+    background:rgba(20,18,23,.96);
 
     display:flex;
 
@@ -238,20 +327,20 @@ body{
 
 
 /* ==========================================================
-   CONTENT
+   VIEWER CONTENT
 ========================================================== */
 
 .viewer-content{
 
-    width:90%;
-
-    max-width:1500px;
-
     display:flex;
 
-    gap:60px;
+    gap:70px;
 
     align-items:center;
+
+    width:92%;
+
+    max-width:1600px;
 
 }
 
@@ -275,25 +364,33 @@ body{
 
     flex:1;
 
+    max-width:420px;
+
 }
 
-.viewer-text h1{
+.viewer-text h2{
+
+    font-family:'EB Garamond',serif;
 
     font-size:2.4rem;
 
-    font-weight:400;
+    font-weight:600;
 
-    margin-bottom:15px;
+    margin-bottom:18px;
+
+    color:#f5f2ed;
 
 }
 
 .meta{
 
-    color:#c9c9c9;
+    color:#d8c7a0;
 
     margin-bottom:25px;
 
-    letter-spacing:.05em;
+    line-height:1.8;
+
+    font-size:1rem;
 
 }
 
@@ -301,7 +398,7 @@ body{
 
     line-height:1.9;
 
-    font-size:1rem;
+    color:#ece6db;
 
 }
 
@@ -314,7 +411,7 @@ body{
 
     position:absolute;
 
-    top:20px;
+    top:25px;
 
     right:35px;
 
@@ -330,26 +427,93 @@ body{
 
 .close:hover{
 
-    color:#d89292;
+    color:#d8c7a0;
 
 }
 
 
 /* ==========================================================
-   MOBILE VIEWER
+   MOBILE
 ========================================================== */
 
 @media(max-width:900px){
+
+    .layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .sidebar{
+
+        border-right:none;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+        padding:25px;
+
+    }
+
+    .sidebar ul{
+
+        display:flex;
+
+        justify-content:center;
+
+        gap:24px;
+
+        flex-wrap:wrap;
+
+    }
+
+    .sidebar li{
+
+        margin-bottom:0;
+
+    }
+
+    .content{
+
+        padding:20px;
+
+    }
 
     .viewer-content{
 
         flex-direction:column;
 
+        gap:30px;
+
+        overflow-y:auto;
+
     }
 
     .viewer-text{
 
-        width:100%;
+        max-width:100%;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .topbar{
+
+        padding:20px;
+
+    }
+
+    .site-title a{
+
+        font-size:2.2rem;
+
+    }
+
+    .social-icons{
+
+        gap:16px;
 
     }
 

@@ -8,33 +8,15 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Tahia Anan Dhira | Artist</title>
+    <title>Paintings | Tahia Anan Dhira</title>
 
     <meta name="description"
-          content="Artwork by Tahia Anan Dhira including paintings, drawings and illustrations.">
+          content="Paintings by Tahia Anan Dhira.">
 
-    <meta name="author"
-          content="Tahia Anan Dhira">
+    <link rel="stylesheet"
+          href="../style.css">
 
-    <!-- Open Graph -->
-
-    <meta property="og:title"
-          content="Tahia Anan Dhira | Artist">
-
-    <meta property="og:description"
-          content="Artwork by Tahia Anan Dhira">
-
-    <meta property="og:type"
-          content="website">
-
-    <meta property="og:url"
-          content="https://art.tahiaanandhira.com/">
-
-    <meta property="og:image"
-          content="https://art.tahiaanandhira.com/paintings/p2023_2.jpg">
-
-    <!-- Google Fonts -->
-
+    <!-- Fonts -->
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
 
@@ -42,18 +24,12 @@
           href="https://fonts.gstatic.com"
           crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap"
           rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- CSS -->
-
-    <link rel="stylesheet"
-          href="style.css">
 
 </head>
 
@@ -67,7 +43,7 @@
 
         <h1 class="site-title">
 
-            <a href="index.html">
+            <a href="../index.html">
 
                 Tahia Anan Dhira
 
@@ -109,9 +85,9 @@
          MAIN LAYOUT
     =========================================================== -->
 
-    <main class="layout">
+    <div class="layout">
 
-        <!-- LEFT MENU -->
+        <!-- Sidebar -->
 
         <aside class="sidebar">
 
@@ -120,44 +96,28 @@
                 <ul>
 
                     <li>
-
-                        <a href="index.html"
-                           class="active">
-
+                        <a href="../index.html">
                             Home
-
                         </a>
-
                     </li>
 
                     <li>
-
-                        <a href="pages/paintings.html">
-
+                        <a href="paintings.html"
+                           class="active">
                             Paintings
-
                         </a>
-
                     </li>
 
                     <li>
-
-                        <a href="pages/drawings.html">
-
+                        <a href="drawings.html">
                             Drawings
-
                         </a>
-
                     </li>
 
                     <li>
-
-                        <a href="pages/illustrations.html">
-
+                        <a href="illustrations.html">
                             Illustrations
-
                         </a>
-
                     </li>
 
                 </ul>
@@ -167,17 +127,66 @@
         </aside>
 
 
-        <!-- FEATURED ARTWORK -->
+        <!-- Gallery -->
 
-        <section class="content">
+        <main id="gallery"></main>
 
-            <img src="paintings/p2023_2.jpg"
-                 alt="Featured Artwork"
-                 class="featured-image">
+    </div>
 
-        </section>
 
-    </main>
+    <!-- ==========================================================
+         FULLSCREEN VIEWER
+    =========================================================== -->
+
+    <div id="viewer"
+         class="viewer hidden">
+
+        <span id="close"
+              class="close">
+
+            &times;
+
+        </span>
+
+        <div class="viewer-content">
+
+            <div class="viewer-image-container">
+
+                <img id="viewer-image"
+                     alt="Artwork">
+
+            </div>
+
+            <div class="viewer-text">
+
+                <h2 id="viewer-title"></h2>
+
+                <p class="meta">
+
+                    <span id="viewer-year"></span>
+
+                    •
+
+                    <span id="viewer-medium"></span>
+
+                </p>
+
+                <p id="viewer-caption"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================================
+         JAVASCRIPT
+    =========================================================== -->
+
+    <script src="../data/paintings.js"></script>
+
+    <script src="../gallery.js"></script>
 
 </body>
 
