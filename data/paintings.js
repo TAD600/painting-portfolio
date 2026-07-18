@@ -70,7 +70,7 @@ const artworks = [
         caption: "This is a token of our amazing time in Simmi's home in London and now we are at three different parts of the globe. This is now hanging on Shaila's kitchen wall."
     },
     {
-        image: "../paintings/p2013.jpg",
+        image: "../paintings/p2013.JPG",
         title: "Cinder and Smoke",
         year: "2017",
         medium: "Acrylic on Paper",
